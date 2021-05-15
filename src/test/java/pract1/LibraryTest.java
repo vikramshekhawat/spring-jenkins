@@ -5,15 +5,17 @@ package pract1;
 
 
 import org.junit.jupiter.api.Test;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 
 
 
 @SpringBootTest
 class LibraryTest {
-
+	public static org.slf4j.Logger logger=LoggerFactory.getLogger(Library.class);
 	@Test
 	void contextLoads() {
+		logger.info("Welcome to testing");
 	}
 
 }
